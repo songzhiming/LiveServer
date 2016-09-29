@@ -32,6 +32,12 @@ router.get('/action=deleteLiveCode', function(req, res, next) {
   res.send(dic);
 });
 
+router.get('/action=getAllCode', function(req, res, next) {
+  var dic = {"code":0,
+             "arr":arr};
+  res.send(dic);
+});
+
 module.exports = router;
 /*
  * 删除数组中指定值
