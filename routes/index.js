@@ -24,10 +24,7 @@ router.get('/action=getLiveCode', function(req, res, next) {
 
 router.get('/action=deleteLiveCode', function(req, res, next) {
   var dic = req.query;
-  console.log(dic.code)
-  console.log(arr)
   arr.remove(dic.code)
-  console.log(arr)
   var dic = {"code":0};
   res.send(dic);
 });
